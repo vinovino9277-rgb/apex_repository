@@ -1,0 +1,186 @@
+# Conditional Statements in Python
+
+a = 33
+b = 200
+
+# If statement
+if b > a:
+    print("b is greater than a")
+
+# If-elif-else statement
+a = 200
+b = 20
+
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+
+# Discount
+amount = 2000
+
+if amount < 1000:
+    discount = amount * 0.05
+elif amount < 5000:
+    discount = amount * 0.10
+else:
+    discount = amount * 0.15
+
+print("Discount:", discount)
+print("Net payable:", amount - discount)
+
+# Nested if
+var = 100
+
+if var < 200:
+    print("Expression value is less than 200")
+
+    if var == 150:
+        print("Which is 150")
+    elif var == 100:
+        print("Which is 100")
+    elif var == 50:
+        print("Which is 50")
+    elif var < 50:
+        print("Expression value is less than 50")
+else:
+    print("Could not find true expression")
+
+# Nested if with multiple conditions
+var = 185
+
+if var < 200:
+    print("Expression value is less than 200")
+
+    if var > 150 and var < 170:
+        print("Which is greater than 150 less than 170")
+    elif var == 100 or var > 180:
+        print("Which is equal 100 or greater than 180")
+    elif var == 50:
+        print("Which is 50")
+    elif var < 50:
+        print("Expression value is less than 50")
+else:
+    print("Could not find true expression")
+
+print("Good bye!")
+output:
+b is greater than a
+a is greater than b
+Discount: 200.0
+Net payable: 1800.0
+Expression value is less than 200
+Which is 100
+Expression value is less than 200
+Which is equal 100 or greater than 180
+Good bye!for i in range(1, 6):
+    if i == 3:
+        break
+    print(i)
+output:
+1
+2
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
+output:
+1
+2
+4
+5
+PYTHON PROGRAMS – PASS, FORMAT() AND STRING FORMAT
+
+1. Pass Statement
+
+for i in range(1, 4):
+    pass
+
+print("Loop completed")
+
+Output:
+Loop completed
+
+
+2. Empty Condition Block
+
+x = 10
+
+if x > 5:
+    pass
+else:
+    print("Less than 5")
+
+print("Done")
+
+Output:
+Done
+
+
+3. Python format() Method
+
+name = "John"
+age = 23
+
+print("My name is {} and I am {} years old.".format(name, age))
+
+Output:
+My name is John and I am 23 years old.
+
+
+4. Old String Format
+
+name = "John"
+print("Hello, %s!" % name)
+
+Output:
+Hello, John!
+
+name = "John"
+age = 23
+print("%s is %d years old." % (name, age))
+
+Output:
+John is 23 years old.
+
+
+5. New String Format
+
+name = "John"
+age = 23
+
+print("My name is {} and I am {} years old.".format(name, age))
+
+# Store input numbers:
+num1 = input('Enter first number: ')
+num2 = input('Enter second number: ')
+
+# Add two numbers
+sum = float(num1) + float(num2)
+# Subtract two numbers
+min = float(num1) - float(num2)
+# Multiply two numbers
+mul = float(num1) * float(num2)
+#Divide two numbers
+div = float(num1) / float(num2)
+
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+
+# Display the subtraction
+print('The subtraction of {0} and {1} is {2}'.format(num1, num2, min))
+# Display the multiplication
+print('The multiplication of {0} and {1} is {2}'.format(num1, num2, mul))
+# Display the division
+print('The division of {0} and {1} is {2}'.format(num1, num2, div))
+
+Output:
+My name is John and I am 23 years old.
+Enter first number: 10
+Enter second number: 2
+The sum of 10 and 2 is 12.0
+The subtraction of 10 and 2 is 8.0
+The multiplication of 10 and 2 is 20.0
+The division of 10 and 2 is 5.0
