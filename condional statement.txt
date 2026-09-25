@@ -1,0 +1,111 @@
+PYTHON CONDITIONAL STATEMENTS
+
+1. IF STATEMENT
+
+a = 33
+b = 200
+
+if b > a:
+    print("b is greater than a")
+
+Output:
+b is greater than a
+
+
+2. IF-ELSE STATEMENT
+
+a = 200
+b = 33
+
+if b > a:
+    print("b is greater than a")
+else:
+    print("b is not greater than a")
+
+Output:
+B is not greater than a
+
+
+3. IF-ELIF-ELSE STATEMENT
+
+a = 200
+b = 20
+
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+
+Output:
+a is greater than b
+
+
+4. DISCOUNT PROGRAM
+
+amount = 2000
+
+if amount < 1000:
+    discount = amount * 0.05
+    print("Discount", discount)
+elif amount < 5000:
+    discount = amount * 0.10
+    print("Discount", discount)
+else:
+    discount = amount * 0.15
+    print("Discount", discount)
+    print("Net payable:", amount - discount)
+
+Output:
+Discount 200.0
+
+
+5. NESTED IF STATEMENT
+
+var = 100
+
+if var < 200:
+    print("Expression value is less than 200")
+    if var == 150:
+        print("Which is 150")
+    elif var == 100:
+        print("Which is 100")
+    elif var == 50:
+        print("Which is 50")
+    elif var < 50:
+        print("Expression value is less than 50")
+else:
+    print("Could not find true expression")
+
+print("Good bye!")
+
+Output:
+Expression value is less than 200
+Which is 100
+Good bye!
+
+
+6. NESTED IF WITH AND / OR
+
+var = 185
+
+if var < 200:
+    print("Expression value is less than 200")
+    if var > 150 and var < 170:
+        print("Which is greater than 150 less than 170")
+    elif var == 100 or var > 180:
+        print("Which is equal to 100 or greater than 180")
+    elif var == 50:
+        print("Which is 50")
+    elif var < 50:
+        print("Expression value is less than 50")
+else:
+    print("Could not find true expression")
+
+print("Good bye!")
+
+Output:
+Expression value is less than 200
+Which is equal to 100 or greater than 180
+Good bye!
