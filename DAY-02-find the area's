@@ -1,0 +1,66 @@
+print("1. Area of Circle")
+print("2. Area of Square")
+print("3. Area of Rectangle")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    radius = int(input("Enter radius: "))
+    area = 3.14 * radius * radius
+    print("Area of Circle =", area)
+
+elif choice == 2:
+    length = int(input("Enter length: "))
+    breadth = int(input("Enter breadth: "))
+    area = length * breadth
+    print("Area of Square =", area)
+
+elif choice == 3:
+    length = int(input("Enter length: "))
+    breadth = int(input("Enter breadth: "))
+    height = int(input("Enter height: "))
+    area = length * breadth * height
+    print("Area of Rectangle =", area)
+
+else:
+    print("Invalid choice")
+
+0utput:
+1. Area of Circle
+2. Area of Square
+3. Area of Rectangle
+Enter your choice: 1
+Enter radius: 5
+Area of Circle = 78.5
+
+
+
+
+
+
+
+========================================================================= RESTART: C:/Users/student112/AppData/Local/Programs/Python/Python314/find the area.py ========================================================================
+1. Area of Circle
+2. Area of Square
+3. Area of Rectangle
+Enter your choice: 2
+Enter length: 5
+Enter breadth: 5
+Area of Square = 25
+
+========================================================================= RESTART: C:/Users/student112/AppData/Local/Programs/Python/Python314/find the area.py ========================================================================
+1. Area of Circle
+2. Area of Square
+3. Area of Rectangle
+Enter your choice: 3
+Enter length: 5
+Enter breadth: 4
+Enter height: 3
+Area of Rectangle = 60
+
+========================================================================= RESTART: C:/Users/student112/AppData/Local/Programs/Python/Python314/find the area.py ========================================================================
+1. Area of Circle
+2. Area of Square
+3. Area of Rectangle
+Enter your choice: 4
+Invalid choice
